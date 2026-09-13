@@ -1,4 +1,5 @@
 :root {
+  color-scheme: only light;
   --champagne: #c9a56a;
   --gold: #b88a47;
   --ivory: #fffaf1;
@@ -18,6 +19,8 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: only light;
+  background-color: var(--ivory);
 }
 
 body {
@@ -513,6 +516,28 @@ blockquote cite {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.2rem;
   align-items: stretch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: only light;
+    --champagne: #c9a56a;
+    --gold: #b88a47;
+    --ivory: #fffaf1;
+    --cream: #f3e7d4;
+    --taupe: #a9957d;
+    --ink: #332d29;
+    --muted: #6f6257;
+    --white: #fffdf9;
+    --line: rgba(184, 138, 71, 0.3);
+  }
+
+  html,
+  body {
+    color-scheme: only light;
+    color: var(--ink);
+    background-color: var(--ivory);
+  }
 }
 
 .gift-card {
