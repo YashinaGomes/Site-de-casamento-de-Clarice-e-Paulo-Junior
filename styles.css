@@ -512,9 +512,13 @@ blockquote cite {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.2rem;
+  align-items: stretch;
 }
 
 .gift-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: var(--white);
   overflow: hidden;
   box-shadow: 0 8px 28px rgba(74, 56, 37, .07);
@@ -533,6 +537,9 @@ blockquote cite {
 }
 
 .gift-card>div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 1.4rem;
 }
 
@@ -551,8 +558,10 @@ blockquote cite {
 
 .choose-gift {
   display: inline-flex;
+  align-self: flex-start;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
   border: 0;
   border-bottom: 1px solid var(--gold);
   padding: 0.2rem 0;
