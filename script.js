@@ -361,7 +361,7 @@ giftForm.addEventListener("submit", (event) => {
 ========================= */
 
 const weddingDate = new Date(
-  "2026-10-17T19:00:00-03:00"
+  "2026-11-07T19:00:00-03:00"
 );
 
 function updateCountdown() {
